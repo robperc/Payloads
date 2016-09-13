@@ -29,7 +29,7 @@ header("Content-disposition: Attachment; filename=\"" . $file_name . "\"");
 
 $payload = new Payload($org);
 $identifier = $payload->getIdentifier();
-$mail = new Mail($description, $fullname, $email, $username, $identifier, $server_in, $server_out);
+$mail = new Mail($description, $fullname, $email, $username, $identifier, $server_in, $server_out, $org);
 $payload->addPayloadContent($mail->getXML());
 $xml = $payload->getXML()
 ?>
