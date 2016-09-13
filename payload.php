@@ -107,7 +107,7 @@ class Payload extends Config{
 // Class containing the key=>value pairs for Mail account child payloads
 class Mail extends Config {
 	
-	function __construct($description, $name, $email, $username, $payloadIdentifier, $server_in, $server_out) {
+	function __construct($description, $name, $email, $username, $payloadIdentifier, $server_in, $server_out, $org) {
 		parent::__construct();
 		$mailKeyVal = array(
 				"EmailAccountDescription" => NULL, # A user-visible description of the email account, shown in the Mail and Settings applications.
